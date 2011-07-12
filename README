@@ -1,0 +1,2 @@
+if you are getting runtime errors about mkTextEncoding that is a problem with GCONV, fix it like:
+heroku config:add GCONV_PATH=/usr/lib64/gconv
