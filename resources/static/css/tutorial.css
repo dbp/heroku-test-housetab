@@ -1,0 +1,73 @@
+#tutorial {
+  position: fixed;
+  z-index: 999;
+  left: 30px;
+  top: 0px;
+  width: 275px;
+  border: 2px solid #C42700;
+  border-top: 0;
+  background-color: white;
+  padding: 5px;
+  text-align: left;
+}
+
+#tutorial .content p {
+  font-size: 16px;
+  padding: 5px;
+}
+
+#tutorial .num {
+  color: #C42700;
+}
+
+#tutorial a.end {
+  float: right;
+  text-align: right;
+}
+
+#tutorial-1, #tutorial-2, #tutorial-3, #tutorial-4 {
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+
+#tutorial-1 {
+  background: transparent url("/img/Other/step1.png") no-repeat center center;
+  top: -10px;
+  left: 80px;
+}
+
+#tutorial-2 {
+  background: transparent url("/img/Other/step2.png") no-repeat center center;
+}
+
+#tutorial-2.a {
+  top: 0px;
+  left: -40px;
+}
+
+#tutorial-2.b {
+  top: -10px;
+  left: 80px;
+}
+
+#tutorial-3 {
+  background: transparent url("/img/Other/step3.png") no-repeat center center;
+}
+
+#tutorial-3.a {
+  bottom: 80px;
+  left: 400px;
+}
+
+#tutorial-3.b {
+  top: 0px;
+  left: -40px;
+}
+
+#tutorial-4 {
+  background: transparent url("/img/Other/step4.png") no-repeat center center;
+  top: -20px;
+  left: -20px;
+}
+

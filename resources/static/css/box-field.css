@@ -1,0 +1,103 @@
+.box-field, .box-field-multi {
+  display: inline-block;
+  position: relative;
+}
+
+.box-field .display, .box-field-multi .display {
+/*  width: 100px;
+*/  background-color: white;
+  color: black;
+  height: 12px;
+}
+
+.box .close {
+  float: right;
+  width: 20px;
+  height: 20px;
+}
+
+.box .close:hover {
+  cursor: pointer;
+} 
+
+.box-field-multi .box .option {
+  background: transparent url("/img/Icons/checkbox.png") no-repeat 0px 4px;
+}
+
+.box-field-multi .box .option.selected {
+  color: black;
+  background-image: url("/img/Icons/checkbox_sel.png");
+}
+
+
+.box-field .box, .box-field-multi .box {
+  position: absolute;
+  top: 33px;
+  left: 0px;
+  background-color: white;
+  border: 1px solid gray;
+  padding: 5px;
+  width: 140px;
+  color: black;
+  z-index: 100;
+}
+
+.box-field .box .point, .box-field-multi .box .point {
+  width: 100%;
+  height: 16px;
+  margin-top: -17px;
+  background: transparent url("/img/Other/point.png") no-repeat center center;
+}
+
+.box-field .box .option, .box-field-multi .box .option {
+  cursor: pointer;
+  width: 100px;
+  height: 20px;
+  margin: 3px;
+  text-align: left;
+  padding-left: 20px;
+}
+
+.box-field-multi .box .option {
+  color: #888;
+}
+
+.box-field .box .option:hover, .box-field-multi .box .option:hover {
+  cursor: pointer;
+}
+
+.box-field-multi .box .all-toggle {
+  width: 100px;
+  text-align: center;
+  color: #888;
+  border-bottom: 1px solid black;
+  padding-left: 5px;
+  margin-left: 4px;
+  padding-bottom: 2px;
+  background: transparent url("/img/Icons/checkbox.png") no-repeat 0px 4px;  
+}
+
+.box-field-multi .box .all-toggle:hover {
+  cursor: pointer;
+}
+
+.box-field-multi .box .all-toggle.selected {
+  color: black;
+  background-image: url("/img/Icons/checkbox_sel.png");
+}
+
+.errors {
+  position: absolute;
+  top: 25px;
+  background-color: white;
+  padding: 0;
+  color: #C42700;
+  font-size: 15px;
+  text-align: left;
+  width: 100px;
+}
+
+.error {
+  color: #C42700;
+  font-size: 15px;
+}

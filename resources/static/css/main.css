@@ -1,0 +1,867 @@
+/*This css file contains the styling information for all the html files. However, because the navigation bar shifts around I've created separate css files for that*/
+
+	body {
+		margin: 0;
+	}
+	
+	h1 {
+		font-family: "times new roman";
+		font-weight: normal;
+		font-size: 16px;
+		text-align: center;
+		margin: 0;
+		letter-spacing: 3px;
+		padding-top: 28px;
+	}
+	
+	
+	h2 {
+		font-family: "times new roman";
+		font-weight: normal;
+		font-size: 16px;
+		margin: 0;
+	}
+	
+	h3 {
+		font-family: "times new roman";
+		font-weight: normal;
+		font-size: 15px;
+		text-align: center;
+		font-style: italic;
+		margin: 0;
+	}
+	
+	
+	p {
+		font-family: 'times new roman';
+		font-size: 15px;
+		margin: 0;
+		margin-top: 2px;
+	}
+
+
+/*All the content in the topmost layer*/
+
+	#top {
+		width: 100%;
+		margin: 0;
+		background-image: url("/img/Backgrounds/margin_top.png");
+	}
+	
+	#topcontents {
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("/img/Backgrounds/grid.png");
+		height: 144px;
+	}
+	
+	#topcontents h1 {
+		padding-bottom: 1px;
+		border-bottom: 1px solid black;
+	}
+	
+	#topcontents p {
+		font-size: 18px;
+		text-align: center;
+	}
+	
+	#topcontents img {
+		margin: 0;
+		margin-left: 468px;
+		margin-top: 3px;
+		}
+
+	#totalshares img {
+		margin: 0;
+		margin-left: 150px;
+		margin-top: 3px;
+		}
+		
+	#totalshares {
+		width: 320px;
+		margin-left: 320px;
+		display: inline-block;
+		vertical-align: top;
+	}
+		
+	#adduser {
+		display: inline-block;
+		width: 315px;
+		vertical-align: top;
+		margin-top: 8px;
+		position: relative;
+	}
+	
+	#adduser p {
+		font-size: 15px;
+	}
+	
+	#adduser form{
+		color: black;
+		margin-left: 124px;
+		margin-top: -5px;
+	}
+	
+	.adduserform {
+		width: 138px;
+	}
+
+	.addform_submit {
+		margin-top: 2px;
+	}
+
+/*All of the content above the navigation bar but below the topmost layer. "_lo" refers to the logged out pages (Sign Up and Log In). These are different because there is no topmost layers for these pages*/
+
+	#above {
+		width: 100%;
+		margin: 0;
+		background-image: url("/img/Backgrounds/margin.png");
+	}
+	
+	#abovecontents {
+		width: 960px;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("/img/Backgrounds/grid.png");
+	}
+	
+	#abovecontents_lo {
+		width: 960px;
+		height: 240px;
+		margin-top: 0;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("/img/Backgrounds/grid.png");
+	}
+	
+	
+	/* This is for the written content on the Log In page*/
+	
+	#copy {
+		width: 144px;
+		margin: 0;
+		margin-left: 48px;
+		display: inline-block;
+		vertical-align: top;
+		margin-top: 24px;
+		margin-bottom: -96px;
+	}
+	
+	#copy p {
+		font-family: "times new roman";
+		font-size: 15px;
+		line-height: 19px;
+		margin-bottom: 15px;
+		color: #383838;
+	}
+	
+	#marx {
+		background-image: url("/img/Backgrounds/dot.png");
+		background-repeat: no-repeat;
+		display: inline-block;
+		width: 456px;		
+		margin: 0;
+		padding: 0;
+		vertical-align: top;	
+
+	}
+	
+	#marx p {
+		font-family: "times new roman";
+		font-size: 15px;
+		font-style: italic;
+		text-align: center;
+		line-height: 19px;
+		color: gray;
+		padding-left: 72px;
+		padding-top: 48px;	
+	}
+	
+	/*Styling for both the Balance of Payments table as well as the User Settings Table*/
+	
+	
+	#payments-table {
+		width: 864px;
+		margin: 0px auto;
+		padding-bottom: 1px;
+	}
+	.people-table {
+    position: relative;
+	}
+	
+	.person {
+		width: 143px;
+		height: 95px;
+		border-right: 1px solid #424242;
+		border-bottom: 1px solid #424242;
+		float: left;
+/*    position: relative;
+    z-index: 2;*/
+	}
+		
+	.person.last {
+		border-right: 0;
+	}
+		
+	.person.bottom {
+		border-bottom: 0;
+	}
+	
+	.person .sub {
+/*    position: relative;
+    z-index: 0;*/
+	}
+	
+	.person h2 {
+		margin-left: 8px;
+		margin-top: 8px;
+	}
+	
+	.person p {
+		margin-left: 8px;
+		margin-top: -3px;
+		margin-bottom: 3px;
+	}
+	
+	.person .balance {
+		text-align: right;
+		margin-right: 6px;
+		font-size: 18px;
+		}
+		
+	.person .percent {
+	  margin-top: 5px;
+	}
+	
+	.shares a {
+		text-decoration: none;
+		color: black;
+		font-family: "times new roman";
+	}
+	
+	.shares a:hover {
+		text-decoration: underline; 
+	}
+	
+	.shares{
+		text-align: right;
+		margin-right: 8px;
+	}
+	
+/*This is the basic styling for the navigation bar. The rest is in the other css files.*/
+
+	#navbar {
+		width: 100%;
+		margin: 0;
+		background-image: url("/img/Backgrounds/margin_nav.png");
+	}
+	
+	#navbarcontents {
+		width: 960px;
+		height: 288px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("/img/Backgrounds/grid.png");
+	}
+		
+	#navbarcontents_lo1 {
+		width: 960px;
+		height: 288px;
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("/img/Backgrounds/grid.png");
+	}
+	
+	#navbarcontents_lo2 {
+		width: 960px;
+		height: 288px;
+		margin: 0;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("/img/Backgrounds/nav_mid_lo.png");
+	}
+	
+	#navbarcontents1 {
+		background-image: url("/img/NavigationBar/circles.png");
+		height: 144px;
+		position: relative;
+	}
+	
+	#navbarcontents1_lo {
+		height: 144px;
+	}
+	
+
+/*All of the content below the navbar*/
+
+	#below {
+		width: 100%;
+		margin: 0;
+		background-image: url("/img/Backgrounds/margin.png");
+	}
+	
+	#belowcontents {
+		width: 960px;
+		margin-left: auto;
+		margin-right: auto;
+		background-image: url("/img/Backgrounds/grid.png");
+	}
+	
+	/*This is the header content that introduces the List of Purchases Table and the perhaps the soon-to-come history table*/
+	
+	#belowtop {
+		margin: 0;
+		width: 864px;
+		height: 144px;
+		margin-left: 48px;
+	}
+	
+	#bt1 {
+		margin: 0;
+		background-image: url("/img/Other/typewriter.png");
+		float: left;
+		width: 144px;
+		height: 144px;
+	}
+	
+	#bt1b {
+		margin: 0;
+		background-image: url("/img/Other/telescope.png");
+		float: left;
+		width: 144px;
+		height: 144px;
+	}
+	
+	
+	#bt2 {
+		margin: 0;
+		float: left;
+		width: 576px;
+		height: 144px;
+	}
+	
+	
+	#bt2 img {
+		margin: 0;
+		margin-left: 276px;
+		margin-top: 3px;
+	}
+	
+	#bt2 p{
+		font-family: "times new roman";
+		font-size: 18px;
+		text-align: center;
+	}
+	
+	#bt3 {
+		margin: 0;
+		float: left;
+		height: 144px;
+		width: 144px;
+	}
+	
+	#bt3 h3{
+		text-align: right;
+		color: #5082A0;
+		padding-top: 8px
+	}
+	
+	#bt3 p{
+		font-family: "times new roman";
+		font-size: 18px;
+		text-align: right;
+		color: #5082A0;
+		margin: 0;
+	}
+	
+	/*List of Purchases Table and Account History Table*/
+	
+	#purchases {
+	  margin-top: 0px;
+		margin-left: 48px;
+		font-size: 15px;
+		width: 868px;
+		min-height: 200px;
+	}
+
+	#purchases .purchase {
+	  height: 23px;
+  }
+  
+	#purchases .purchase .col {
+		border-top: 1px solid #A3CCE5;
+		border-right: 1px solid #A3CCE5;
+    height: 20px;
+		text-align: center;
+		margin: 0;
+		padding: 0;
+		padding-top: 3px;
+		position: relative;
+	}
+
+  #purchases .purchase .col .box .close {
+    float: right;
+  }
+
+	#purchases .purchase .col input, #purchases .purchase .col .display {
+	  border: 1px solid #555;
+/*    margin-bottom: 5px;*/
+	  display: block;
+	  height: 16px;
+	  margin-left: 5px;
+	}
+	
+	 #purchases .purchase .col .display {
+	   font-size: 13px;
+	   padding-left: 5px;
+	   padding-right: 5px;
+     height: 14px;
+/*     margin-bottom: 2px;*/
+	 }
+	
+  #purchases .purchase .deleted {
+    border-top: 1px solid red;
+    width: 100%;
+  }
+	
+	#purchases .purchase div, #purchases .heading div {
+	  float: left;
+  }
+  
+  .clearfix {
+    clear: both;
+  }
+	
+	#purchases .heading, #history .heading {
+		font-family: "times new roman";
+		font-weight: normal;
+		color: #5082A0;
+		font-size: 16px;
+		text-align: center;
+	}
+	
+	
+	
+	.delete {
+		background-image: url("/img/Icons/delete.png");
+		margin: 0;
+		width: 22px;
+		height: 21px;
+    float: left;
+ 		}
+		
+	.delete:hover {
+		background-image: url("/img/Icons/delete_mo.png");
+		cursor: pointer;
+	}
+		
+	.edit {
+		background-image: url("/img/Icons/edit.png");
+		margin: 0;
+		width: 22px;
+		height: 21px;
+    float: left;
+  }
+		
+	.edit:hover, .edit.selected {
+		background-image: url("/img/Icons/edit_mo.png");
+		cursor: pointer;
+	}
+	
+	.col, .col .showing {
+/*    padding-top: 3px;*/
+	}
+	
+	.col1, #purchases .purchase .col1 {
+		width: 48px;
+		padding: 0;
+		height: 23px;
+		margin: 0;
+	}
+	
+	#purchases .purchase .col1 .display {
+	  width: 35px;
+    height: 20px;
+    margin-left: 0px;
+	}
+	
+	#purchases .purchase .col1 .box {
+	  left: -50px;
+	  
+	}
+ .col1 .more {
+	  width: 110px;
+	  left: -35px;
+/*    top: 7  0px;*/
+	}
+	
+  .col1 .more-box {
+    margin-bottom: -4px;
+  }
+	
+	.col2, #purchases .purchase .col2 {
+		width: 47px;
+    padding-top: 0px;
+    height: 23px;
+	}
+	
+	.col3 {
+		width: 119px;
+	}
+	
+	.col3 .display {
+	  width: 97px;
+	}
+	
+	.col4 {
+		width: 263px;
+	}
+	
+	.col4 .more {
+	  left: 65px;
+	  width: 120px;
+	}
+	
+	.col4 .more-box {
+	  width: 100%;
+	}
+	.col4 .showing {
+	  width: 100%;
+	  text-align: center;
+		padding-left: 3px;
+	}
+	
+	
+	.col5 {
+		width: 88px;
+		text-align: right;
+		padding-right: .5em;
+	}
+	
+	#purchases .purchase .col5 input {
+	  width: 80px;
+	}
+	
+	.col6 {
+		width: 88px;
+		text-align: right;
+		padding-right: .5em;
+	}
+	
+	#purchases .purchase .col6 input {
+	  width: 80px;
+	}
+	
+	.col7 {
+		text-align: left;
+		width: 192px;
+		border-right: none;
+	}
+	.col7 .display {
+	  width: 130px;
+	  margin-left: 5px;
+	}
+	
+	.col7 .showing {
+	  padding-left: .5em;
+	}
+	
+	.col2 .delete-box .more {
+	  width: 100px;
+	  left: -45px;
+	}
+	
+	#purchases .purchase.entry-form .col4 input {
+	  width: 250px;
+	}
+	
+	#purchases .purchase .col5 {
+	  text-align: right;
+		padding-right: .5em;
+	}
+	
+	#purchases .purchase  .col6 {
+		text-align: right;
+		padding-right: .5em;
+	}
+	
+	#purchases .heading .col7 {
+	  margin-left: 10px;
+	  width: 182px;
+  }
+  
+  #purchases .purchase .col7 {
+    border-right: 0;
+    text-align: left;
+  }
+  
+	#purchases .purchase .col7 .more {
+    min-width: 100px;
+    padding-left: 15px;
+    line-height: 20px;
+  }
+	
+
+	
+	/*Frequently Asked Questions section of the About Us page*/
+	
+	#faq_head {
+		margin-left: auto;
+		margin-right: auto;
+		width: 576px;
+		height: 144px;
+		
+	}
+	
+	#faq_head img {
+			margin: 0;
+			margin-left: 276px;
+			margin-top: 3px;
+		}
+	
+	#faq_head p{
+		font-family: "times new roman";
+		font-size: 16px;
+		text-align: center;
+		margin-top: .25em;
+	}
+	
+	#faq_head a {
+		text-decoration: none;
+		color: black;
+	}
+	
+	#faq_head a:hover {
+		text-decoration: underline;
+	}
+			
+	#faq {
+		margin-left: auto;
+		margin-right: auto;
+		width: 576px;		
+	}
+	
+	#faq p{
+		margin-left: 22px;	
+		margin-top: 15px;
+	}
+	
+	#faq h2{
+		margin-top: 16px;
+	}
+	
+	/*The small folio-like content at the very bottom of every page*/
+	
+	#bottom {
+		margin: 0;
+		width: 960px;
+		height: 96px;
+		background-image: url("/img/Other/logo_small.png");
+	}
+	
+	#bottom p {
+		font-family: "times new roman";
+		font-size: 14px;
+		color: #A3CCE5;
+		margin: 0;
+		width: 900px;
+		text-align: right;
+		color: #5082A0;
+		padding-top: 80px;
+	}
+	
+	#bottom a{
+		color: #5082A0;
+/*    text-decoration: none;*/
+	}
+
+/*This is a navigation tool fixed to the right side of the browser*/
+
+	#arrows{
+		position: fixed;
+		top: 148px;
+		margin: 0;
+		right: 0;
+		height: 78px;
+		width: 24px;
+	}
+	
+	#arrow_above{
+		margin:0;
+		width: 24px;
+		height: 24px;
+		background-image: url("/img/Glyphs/arrow_above.png");
+	}
+	
+	#arrow_above:hover {
+	  background-image: url("/img/Glyphs/arrow_above_mo.png");
+	}
+	
+	#arrow_mid{
+		margin:0;
+		width: 24px;
+		height: 20px;
+		background-image: url("/img/Glyphs/arrow_mid.png");
+	}
+	
+	#arrow_mid:hover {
+	  background-image: url("/img/Glyphs/arrow_mid_mo.png");
+	}
+	
+	#arrow_below{
+		margin:0;
+		width: 24px;
+		height: 24px;
+		background-image: url("/img/Glyphs/arrow_below.png");
+	}
+	
+	#arrow_below:hover {
+	  background-image: url("/img/Glyphs/arrow_below_mo.png");
+	}
+
+
+/* Misc stuff */
+a.button {
+  display: block;
+}
+
+form.add-share button, #purchases .entry-form button, .edit-person button, .delete-box button, a.button  {
+  background: transparent url("/img/Icons/submit.png") no-repeat  center center;
+ 	width: 36px;
+	height: 18px;
+	border: 0; 
+	cursor: pointer;
+	float: right;
+	position: relative;
+}
+
+#purchases .purchase .col .delete-box .more {
+  text-align: left;
+}
+
+#purchases .purchase .col .delete-box .more:hover {
+  cursor: auto;
+}
+
+#purchases .purchase .col .delete-box form {
+  margin-top: -15px;
+}
+
+#purchases .entry-form .delete-box button {
+  margin-right: 0px;
+}
+
+form.add-share button {
+  background-color: white;
+}
+
+#purchases .entry-form button {
+	margin-right: -40px;
+}
+
+form.add-share button {
+  margin-top: -20px;
+}
+
+.edit-person input {
+  width: 95px;
+}
+
+form.add-share .date {
+  width: 65px;
+}
+
+form.add-share .value {
+  width: 30px;
+}
+
+form.add-share button:hover, #purchases .entry-form button:hover, .edit-person button:hover, .delete-box button:hover, a.button:hover {
+  background-image: url("/img/Icons/submit_mo.png");
+}
+
+#payments-table .edit-person form {
+  margin-bottom: 0;
+}
+
+.shares-box {
+  background-color: white;
+  padding: 5px;
+  font-size: 14px;
+  text-align: right;
+}
+
+.shares-box.hidden {
+  background-color: transparent;
+/*  margin-bottom: 10px;
+*/}
+
+
+.shares-box.showing {
+  z-index: 20;
+  position: relative;
+  border: 1px solid black;
+  margin: 0px 5px;
+}
+
+.shares-box h5 {
+  margin: 0px;
+  font-weight: normal;
+  border-bottom: 1px solid black;
+  text-align: left;
+  font-size: 1em;
+}
+
+.shares-box form {
+  text-align: left;
+  margin: 5px 5px;
+}
+
+.shares-box form button {
+  float: none;
+}
+
+.shares-box input {
+  border: 1px solid black;
+}
+
+.shares-box .share {
+  font-size: 13px;
+  margin: 3px 0px;
+}
+
+a {
+  color: black;
+}
+
+.entry-form {
+  position: relative;
+}
+
+button.b {
+  background: transparent url("/img/Icons/submit_b.png") no-repeat  center center;
+  display: inline-block;
+	margin: 0;
+	width: 36px;
+	height: 18px;
+	border: 0;
+	cursor: pointer;
+
+}
+
+button.b:hover {
+  background-image: url("/img/Icons/submit_b_mo.png");
+}
+
+#navbar #subnav1 p a, #navbar #subnav2 p a {
+  color: black;
+}
+
+.more-items {
+  font-family: "times new roman";
+	font-weight: normal;
+	color: #5082A0;
+	font-size: 16px;
+}
