@@ -1,3 +1,0 @@
-#!/usr/bin/env sh
-./housetab -p $PORT  --no-access-log --no-error-log
-
